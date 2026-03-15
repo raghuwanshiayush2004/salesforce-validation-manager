@@ -13,7 +13,7 @@ const Login = () => {
 
   const handleLogin = () => {
     // Redirect to backend which handles OAuth
-    window.location.href = 'http://localhost:5000/auth/login';
+    window.location.href = `${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/auth/login`;
   };
 
   return (
