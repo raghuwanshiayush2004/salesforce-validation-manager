@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sf-blue: #00a1e0;
+  --sf-blue-dark: #0070d2;
+  --sf-blue-light: #e8f4fd;
+  --sf-green: #2e844a;
+  --sf-green-light: #ecfce7;
+  --sf-red: #c23934;
+  --sf-red-light: #fef1f1;
+  --sf-orange: #e8830a;
+  --sf-orange-light: #fff3e0;
+  --sf-gray-50: #f8f9fa;
+  --sf-gray-100: #f1f3f5;
+  --sf-gray-200: #e9ecef;
+  --sf-gray-300: #dee2e6;
+  --sf-gray-500: #adb5bd;
+  --sf-gray-600: #6c757d;
+  --sf-gray-700: #495057;
+  --sf-gray-800: #343a40;
+  --sf-gray-900: #212529;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --radius: 8px;
+  --radius-lg: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--sf-gray-50);
+  color: var(--sf-gray-900);
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input, textarea {
+  font-family: 'Inter', sans-serif;
+}
+
+.Toastify__toast {
+  border-radius: var(--radius) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+}
